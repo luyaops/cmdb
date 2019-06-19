@@ -1,0 +1,22 @@
+syntax = "proto3";
+package example;
+
+import "google/api/annotations.proto";
+
+service Add {
+    rpc AliEcs (AliEcsRequest) returns (AliEcsResponse) {
+        option (google.api.http) = {
+            post: "/v1/add/aliecs"
+            body: ""
+        };
+    }
+}
+
+message AliEcsRequest {
+    string instanceid = 1;
+}
+
+message AliEcsResponse {
+    int32 code = 1;
+    string data = 2;
+}

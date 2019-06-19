@@ -11,7 +11,7 @@ var DB *gorm.DB
 
 func Initialize() (*gorm.DB, error) {
 	//dbConfig := os.Getenv("DB_CONFIG")
-	db, err := gorm.Open("mysql", "root:123yyqwe@tcp(127.0.0.1)/cmdb?charset=utf8&parseTime=True&loc=Local")
+	db, err := gorm.Open("mysql", "root:123yyqwe@tcp(127.0.0.1)/luya_cmdb?charset=utf8&parseTime=True&loc=Local")
 	db.LogMode(true)
 	if err != nil {
 		panic(err)
