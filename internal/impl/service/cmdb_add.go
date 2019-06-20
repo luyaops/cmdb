@@ -9,7 +9,7 @@ import (
 type CmdbAddTmpl struct {
 }
 
-func (CmdbAddTmpl) AliEcs(context.Context, *pb.AliEcsRequest) (*pb.AliEcsResponse, error) {
+func (c *CmdbAddTmpl) AliEcs(ctx context.Context, req *pb.AliEcsRequest) (*pb.AliEcsResponse, error) {
 	return &pb.AliEcsResponse{
 		Data: "AliEcsResponse...",
 		Code: http.StatusOK,

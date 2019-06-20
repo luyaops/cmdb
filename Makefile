@@ -1,4 +1,4 @@
-PROJECT="example"
+PROJECT="cmdb"
 VERSION=1.0.0
 BUILD=`date +%FT%T%z`
 MODFILE=./go.mod

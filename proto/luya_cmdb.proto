@@ -1,5 +1,5 @@
 syntax = "proto3";
-package example;
+package cmdb;
 
 import "google/api/annotations.proto";
 
@@ -7,7 +7,7 @@ service Add {
     rpc AliEcs (AliEcsRequest) returns (AliEcsResponse) {
         option (google.api.http) = {
             post: "/v1/add/aliecs"
-            body: ""
+            body: "*"
         };
     }
 }
